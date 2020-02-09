@@ -1,1 +1,4 @@
-# typescript-sorting-app
+# TypeScript Sorting App
+
+This app is based on following tutorial: https://www.udemy.com/course/typescript-the-complete-developers-guide/
+
