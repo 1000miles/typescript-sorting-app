@@ -7,7 +7,7 @@ class Sorter {
   // }
 
   // Way 2: Aquivalent to way 1
-  constructor(public collection: number[] | string) {}
+  constructor(public collection: number[] | string | LinkedList) {}
 
   // We don't return anything here
   sort(): void {
@@ -26,6 +26,9 @@ class Sorter {
          * TYPE GUARDS
          * to check type or instance of collection
          */
+
+        // BAD SOLUTION with LinkedList example
+        if (this.collection instanceof LinkedList) {}
 
         // All of this only works if collection is a number[]
         // If collection is an array of numbers

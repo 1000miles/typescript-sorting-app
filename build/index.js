@@ -24,6 +24,8 @@ var Sorter = /** @class */ (function () {
                  * TYPE GUARDS
                  * to check type or instance of collection
                  */
+                // BAD SOLUTION with LinkedList example
+                if (this.collection instanceof LinkedList) { }
                 // All of this only works if collection is a number[]
                 // If collection is an array of numbers
                 // Reference to a constructor function, e.g. instanceof Array, Sorter, Date, etc.
