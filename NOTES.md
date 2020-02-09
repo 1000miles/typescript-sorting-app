@@ -21,11 +21,14 @@ use folling cli-command:
 
 5. Comparison of strings
 
-```javascript
-  "X" > "a" // => false
+  ```javascript
+    "X" > "a" // => false
 
-  "X".charCodeAt(0) // => 88
-  "a".charCodeAt(0) // => 97
+    "X".charCodeAt(0) // => 88
+    "a".charCodeAt(0) // => 97
 
-  88 > 97 // => false
-```
+    88 > 97 // => false
+  ```
+6. Union Types (or operator)
+
+  Only access properties that are common means existent in both types.
