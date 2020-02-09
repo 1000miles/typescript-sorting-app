@@ -1,4 +1,6 @@
-export class NumbersCollection {
+import { Sorter } from './Sorter';
+
+export class NumbersCollection extends Sorter {
   // Way 1:
   // data: number[];
 
@@ -7,7 +9,9 @@ export class NumbersCollection {
   // }
 
   // Way 2: Shorthand with modifier
-  constructor(public data: number[]) {}
+  constructor(public data: number[]) {
+    super();
+  }
 
   // Way 1
   // length1(): number {
