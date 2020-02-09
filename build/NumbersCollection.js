@@ -10,11 +10,11 @@ var NumbersCollection = /** @class */ (function () {
     function NumbersCollection(data) {
         this.data = data;
     }
-    // Way 1
-    NumbersCollection.prototype.length1 = function () {
-        return this.data.length;
-    };
     Object.defineProperty(NumbersCollection.prototype, "length", {
+        // Way 1
+        // length1(): number {
+        //   return this.data.length;
+        // }
         // Way 2: getter
         get: function () {
             return this.data.length;
@@ -35,5 +35,5 @@ var NumbersCollection = /** @class */ (function () {
 }());
 exports.NumbersCollection = NumbersCollection;
 var collection = new NumbersCollection([1, 2, 3]);
-collection.length1(); // Functionn call to length();
+//collection.length1(); // Functionn call to length();
 collection.length; // With getter method no function call here

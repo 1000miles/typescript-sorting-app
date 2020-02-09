@@ -10,9 +10,9 @@ export class NumbersCollection {
   constructor(public data: number[]) {}
 
   // Way 1
-  length1(): number {
-    return this.data.length;
-  }
+  // length1(): number {
+  //   return this.data.length;
+  // }
 
   // Way 2: getter
   get length(): number {
@@ -32,5 +32,5 @@ export class NumbersCollection {
 }
 
 const collection = new NumbersCollection([1, 2, 3])
-collection.length1(); // Functionn call to length();
+//collection.length1(); // Functionn call to length();
 collection.length; // With getter method no function call here

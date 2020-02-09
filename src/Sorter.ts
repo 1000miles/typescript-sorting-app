@@ -1,4 +1,8 @@
-import { NumbersCollection } from './NumbersCollection';
+interface Sortable {
+  length: number;
+  compare(leftIndex: number, rightIndex: number): boolean;
+  swap(leftIndex: number, rightIndex: number): void;
+}
 
 export class Sorter {
   // Way 1:
@@ -8,8 +12,8 @@ export class Sorter {
   //   this.collection = collection;
   // }
 
-  // Way 2: Aquivalent to way 1
-  constructor(public collection: NumbersCollection) {}
+  // Way 2: Equivalent to way 1
+  constructor(public collection: Sortable) {}
 
   // We don't return anything here
   sort(): void {

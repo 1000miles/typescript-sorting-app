@@ -6,7 +6,7 @@ var Sorter = /** @class */ (function () {
     // constructor(collection: number[]) {
     //   this.collection = collection;
     // }
-    // Way 2: Aquivalent to way 1
+    // Way 2: Equivalent to way 1
     function Sorter(collection) {
         this.collection = collection;
     }
