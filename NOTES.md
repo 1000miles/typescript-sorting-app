@@ -32,3 +32,13 @@ use folling cli-command:
 6. Union Types (or operator)
 
   Only access properties that are common means existent in both types.
+
+7. How type guards work
+
+  Narrow type of a value to a primitive type
+
+    typeof --> number | string | boolean | symbol
+
+  Narrow down everry other type of value
+
+    instanceof --> Every other value that is created with a constructor function
