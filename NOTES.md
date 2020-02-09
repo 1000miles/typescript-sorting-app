@@ -18,3 +18,14 @@ use folling cli-command:
   $ tsc -w # Watch input files for changes
   ```
 4. Install the npm package concurrently to run multiple scripts at the same time.
+
+5. Comparison of strings
+
+```javascript
+  "X" > "a" // => false
+
+  "X".charCodeAt(0) // => 88
+  "a".charCodeAt(0) // => 97
+
+  88 > 97 // => false
+```
