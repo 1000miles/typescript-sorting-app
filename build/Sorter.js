@@ -7,7 +7,6 @@ var Sorter = /** @class */ (function () {
     //   this.collection = collection;
     // }
     // Way 2: Aquivalent to way 1
-    // !FIXME: Provide type annotation
     function Sorter(collection) {
         this.collection = collection;
     }
@@ -22,14 +21,8 @@ var Sorter = /** @class */ (function () {
         for (var i = 0; i < length; i++) {
             // Second loop: right most element will be in the sorted position after first iteration is done which is why "i -1" is substracted here from length
             for (var j = 0; j < length - i - 1; j++) {
-                // If left hand-side element (j) is greater than right-hand side element (j + 1)
-                if (this.collection[j] > this.collection[j + 1]) {
-                    // Swap elements: Assign left-hand side element (j) to a new variable (leftHand)
-                    var leftHand = this.collection[j];
-                    // Switch right-hand side element to left-hand side: j = j + 1
-                    this.collection[j] = this.collection[j + 1];
-                    // Swap old left-hand side and move it to last right-hand side element
-                    this.collection[j + 1] = leftHand;
+                if (this.collection.compare(j, j + 1)) {
+                    this.collection.swap(j, j + 1);
                 }
             }
         }
