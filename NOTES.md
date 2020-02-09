@@ -17,3 +17,4 @@ use folling cli-command:
   $ tsc # Compile all files
   $ tsc -w # Watch input files for changes
   ```
+4. Install the npm package concurrently to run multiple scripts at the same time.
