@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+// Abstract class => Eventually will exist in the future
 var Sorter = /** @class */ (function () {
     function Sorter() {
     }
-    // We don't return anything here
     Sorter.prototype.sort = function () {
         var length = this.length;
         /**

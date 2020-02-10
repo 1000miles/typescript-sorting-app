@@ -3,9 +3,13 @@ interface Sortable {
   compare(leftIndex: number, rightIndex: number): boolean;
   swap(leftIndex: number, rightIndex: number): void;
 }
+// Abstract class => Eventually will exist in the future
+export abstract class Sorter {
+  // We promise to implement these methods in the future in the child class:
+  abstract compare(leftIndex: number, rightIndex: number): boolean;
+  abstract swap(leftIndex: number, rightIndex: number): void;
+  abstract length: number;
 
-export class Sorter {
-  // We don't return anything here
   sort(): void {
     const { length } = this;
 
